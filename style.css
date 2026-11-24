@@ -111,3 +111,43 @@ footer {
 .cv-button:hover {
     background-color: #7a2478;
 }
+/* SERVICES SECTION */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.service-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e5d5ec;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.service-card h3 {
+    color: #4b145f;
+    margin-bottom: 12px;
+    font-size: 19px;
+}
+
+.service-card p {
+    color: #444444;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+}
